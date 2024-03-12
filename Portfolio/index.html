@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- background -->
+
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+    <!-- navigation bar -->
+
+    <nav class="nav">
+        <div class="nav-bar">
+            <label for="check"><img src="menu.png" alt="" class="menu-icon" onclick="toogleMenu()"></label>
+            <input type="checkbox" name="" id="check">
+            <div class="logo">
+                MAHESH BABU VENGALA
+            </div>
+            <div class="link">
+                <ul class="links" id="menuList">
+                    <li><a href="">ABOUT ME</a></li>
+                    <li><a href="#resume">RESUME</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- block one -->
+
+    <div class="block1">
+        <div class="blc">
+            <div class="blc1">
+                <div class="info">
+                    <img src="profilepic.jpg" alt="">
+                    <h1>MAHESH BABU</h1>
+                    <h1>VENGALA</h1>
+                    <p>student</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/mahesh-babu-vengala-a58bb92a8/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/mahesh.vengala.39/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://github.com/maheshbabuvengala"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="blc2">
+                <h1 class="heading">hello</h1>
+                <p class="about">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                <button class="res"><a href="#resume">RESUME</a></button>
+                <button class="proj">PROJECTS</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume -->
+
+    <section class="resume" id="resume">   
+        <div class="resume-box">
+            <br><br><br>
+            <br><br>
+            <h1>Resume</h1>
+            <div class="Education">
+                <h3>Education</h3>
+                <button><a href="Mahesh Babu Professional CV Resume.pdf" download="resume">Dowlnload CV</a></button>
+            </div>
+            <div class="Education-box">
+                <br>
+                <br>
+                <h1>PRESENT</h1>
+                <br>
+                <br>
+                <h1 class="college">NRI INSTITUTE OF TECHONOLOGY</h1>
+                <h3>CSE(AI&ML)</h3>
+                <p>Pathavarapadu,vijayawada</p>
+                <br>
+                <div class="nri"><img src="Campus View of NRI Institute of Technology Agiripalli_Campus-View.jpg" alt=""></div>
+            </div>
+            <div class="Education-box">
+                <br>
+                <br>
+                <h1>2020 - 2023</h1>
+                <br>
+                <br>
+                <h1 class="college">Government Polytechnic</h1>
+                <h3>Electronics & Communicatin Engineering (ECE)</h3>
+                <p>5 rout,vijayawada</p>
+                <br>
+                <div class="nri"><img src="images.jfif" alt=""></div>
+            </div>
+            <div class="Education-box hello">
+                <br><br>
+                <h1>SKILLS</h1>
+                <br>
+                <br>
+                <div class="skills">
+                <br>
+                <br>
+                <h3>Frontend Development</h3>
+                <br>
+                <h3>Python Programming</h3>
+                <br>
+                <h3>C Programming</h3>
+                </div>
+                <br><br>
+                <div class="imgs">
+                    <img src="frontend.png" alt="">
+                    <img src="python.jpg" alt="">
+                    <img src="c.jfif" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projects -->
+
+    <section class="projects">
+        <h1>Projects</h1>
+        <div class="p-list">
+            <video src="Landing page.mp4" poster="Screenshot landing page.png" controls class="project"></video>
+            <video src="Calculator.mp4" poster="Screenshot calculator.png" controls class="project"></video>
+            <video src="" poster="Screenshot Battery Indicator.png" controls class="project"></video>
+        </div>
+    </section>
+
+
+    <!-- Section Contact -->
+
+    <section class="contact" id="contact">
+        <br><br><br><br>
+        <h1 >Contact Me</h1>
+        <br><br>
+        <div class="contact-box">
+            <label for="name" class="name">First Name * :</label>
+            <input type="text" name="firstname" id="name"><br>
+            <label for="lastname">Last Name * :</label>
+            <input type="text" name="lastname" id="lastname"><br>
+            <label for="Email">Email :</label>
+            <input type="Email" name="Email" id="Email"><br>
+            <label for="Subject">Subject :</label>
+            <input type="text" name="subject" id="subject"><br>
+            <label for="message">Message:</label>
+            <input type="text" name="message" id="message">
+            <button>Send</button>
+            <br><br>
+        </div>
+    </section>
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function toogleMenu(){
+            if (menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
